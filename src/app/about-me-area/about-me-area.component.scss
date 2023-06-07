@@ -1,0 +1,29 @@
+
+
+.about-me-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-top: 124px;
+    .about-me{
+        display: flex;
+        flex-direction: column;
+        
+        .about-me-title{
+            font-size: 90px;
+            font-weight: 700;
+        }
+        span{
+            color: white;
+        }
+    }
+}
+
+
+
+.portfolio-image{
+    img{
+        height: 50vh;
+        width: auto;
+    }
+}

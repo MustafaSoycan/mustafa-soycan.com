@@ -1,0 +1,97 @@
+.skills-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    .skills-info-container {
+
+     
+
+        .skills-header {
+            display: flex;
+            align-items: center;
+            color: white;
+
+            h3 {
+                font-size: 90px;
+                margin-right: 2vw;
+            }
+
+            img {
+                width: 18vw;
+                height: 5px;
+                position: absolute;
+                right: 0;
+            }
+        }
+
+
+        .skills-statement {
+            color: white;
+            margin-bottom: 2vh;
+        }
+
+
+        .get-in-touch-button {
+            background: #00BEE8;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            padding: 15px 30px;
+            color: white;
+            font-size: 23px;
+            font-weight: 400px;
+            line-height: 27.6px;
+            border: unset;
+            transition: transform 0.15s ease;
+            transform-origin: top left;
+
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(75, 71, 255);
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+
+.skills-container {
+    margin-top: 25vh;
+
+    img{
+
+        transition: transform 0.1s ease;
+
+        &:hover{
+            transform: translateY(-10px);
+        }
+    }
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 6vh;
+}
+
+.row-1 span,
+.row-2 span,
+.row-3 span,
+.row-4 span {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 5vw;
+
+    img {
+        margin-bottom: 1vh;
+    }
+}

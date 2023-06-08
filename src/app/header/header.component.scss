@@ -2,18 +2,22 @@
     height: 8vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
-
 
     img {
         height: 30px;
+        margin-left: 25vw;
+    }
+
+
+    span{
+        position: absolute;
+        right: 25vw;
     }
 
     a {
         color: white;
         text-decoration: none;
-        margin-left: 16px;
+        margin-left: 24px;
         transition: 0.3s;
         font-size: 23px;
         font-weight: 400;

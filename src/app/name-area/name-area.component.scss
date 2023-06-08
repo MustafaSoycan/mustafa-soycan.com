@@ -78,10 +78,13 @@
         font-weight: 400px;
         line-height: 27.6px;
         border: unset;
+        transition: transform 0.15s ease;
+        transform-origin: top left;
 
-        &:hover{
+        &:hover {
             cursor: pointer;
-            background-color: rgb(75,71,255);
+            background-color: rgb(75, 71, 255);
+            transform: scale(1.1);
         }
     }
 

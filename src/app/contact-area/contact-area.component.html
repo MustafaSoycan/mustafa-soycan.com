@@ -1,0 +1,63 @@
+
+<div class="contact-header">
+    <div>
+        <h3>Contact</h3>
+    </div>
+
+    <div>
+        <img src="assets/img/line-contacts.png" alt="line">
+    </div>
+</div>
+
+<div class="contact" id="contact">
+    <div class="contact-left-side">
+        <div class="problem-to-solve">
+            <div class="line-image">
+                <img src="assets/img/contact-second-line.png" alt="line">
+            </div>
+            <div class="problem-text">
+                <h4>Got a problem to solve?</h4>
+            </div>
+        </div>
+
+
+        <div class="contact-container">
+            <span>
+                Contact me through this form, I am interested in hearing you, knowing your
+                ideas, and contributing to your projects with my work.
+            </span>
+
+
+            <span class="contact-me">
+                Need a Frontend developer? <b>Contact me!</b>
+            </span>
+        </div>
+    </div>
+
+    <img class="contact-blue-effect" src="assets/img/blue-contact.png">
+
+    <div class="contact-right-side">
+        <div class="contact-formular">
+            <form (submit)="sendMail()" ngNativeValidate #myForm>
+
+                <div class="name-input">
+                <input required type="text" placeholder="your name" name="name" #nameField>
+                </div>
+
+                <div class="email-input">
+                <input required type="text" placeholder="your email">
+                </div>
+
+                <div class="message-input">
+                <input required type="text" placeholder="your message" name="message" #messageField>
+                </div>
+
+                <div class="send-message-button-container">
+                <button #sendButton class="send-message-button">Send Message :> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

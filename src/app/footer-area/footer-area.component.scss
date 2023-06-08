@@ -1,0 +1,39 @@
+.footer-line-top{
+    
+    img{
+        width: 100%;
+        height: 5px;
+    }
+}
+
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+
+    .impressum{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright{
+        font-size: 23px;
+        color: white;
+    }
+
+    .social-media{
+        img{
+            margin-left: 48px;
+            transition: transform 0.1s ease;
+
+            &:hover{
+                transform: scale(1.3);
+                cursor: pointer;
+            }
+        }
+    }
+}

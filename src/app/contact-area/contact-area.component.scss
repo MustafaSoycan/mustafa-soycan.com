@@ -1,0 +1,154 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        color: white;
+        font-size: 90px;
+    }
+
+    img {
+        position: absolute;
+        right: 0;
+        width: 40vw;
+        height: 5px;
+    }
+}
+
+.problem-to-solve {
+    display: flex;
+    align-items: center;
+    margin-left: 25vw;
+
+    h4 {
+        font-size: 32px;
+        color: white;
+    }
+
+    img {
+        position: absolute;
+        left: 0;
+        width: 6vw;
+        height: 5px;
+    }
+
+    span {
+        color: white;
+    }
+}
+
+
+.contact-container {
+    margin-left: 25vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    span {
+        margin-bottom: 4vh;
+        max-width: 400px;
+    }
+}
+
+
+.blue-contact {
+    position: absolute;
+    right: 0;
+}
+
+
+
+.contact-right-side {
+    margin-top: 13vh;
+}
+
+
+.contact-formular {
+
+    margin-right: 25vw;
+
+    .name-input input {
+        padding: 15px 25px;
+        border: 1px solid #4B47FF;
+        border-radius: 10px;
+        width: 500px;
+        background-color: rgb(20, 29, 47);
+        margin-bottom: 35px;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+
+
+    .email-input input {
+        padding: 15px 25px;
+        border: 1px solid #4B47FF;
+        border-radius: 10px;
+        width: 500px;
+        background-color: rgb(20, 29, 47);
+        margin-bottom: 35px;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+
+    .message-input input {
+        padding: 15px 25px;
+        border: 1px solid #4B47FF;
+        border-radius: 10px;
+        width: 500px;
+        background-color: rgb(20, 29, 47);
+        margin-bottom: 35px;
+        height: 10vh;
+
+        &::placeholder {
+            color: white;
+        }
+    }
+
+
+}
+
+.send-message-button-container {
+    display: flex;
+    justify-content: center;
+
+
+    .send-message-button {
+        background: #00BEE8;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 15px 30px;
+        color: white;
+        font-size: 23px;
+        font-weight: 400px;
+        line-height: 27.6px;
+        border: unset;
+        transition: transform 0.15s ease;
+        transform-origin: top left;
+
+
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(75, 71, 255);
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+.contact-blue-effect {
+    position: absolute;
+    right: 0;
+    margin-top: 7vh;
+}

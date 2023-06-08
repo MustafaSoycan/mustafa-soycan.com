@@ -3,27 +3,72 @@
 .about-me-container{
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
-    margin-top: 124px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 10vh;
+   
+
     .about-me{
         display: flex;
         flex-direction: column;
-        
-        .about-me-title{
+        max-width: 30vw;
+    }
+
+    .point-1{
+        display: flex;
+        flex-direction: column;
+       .about-me-title{
             font-size: 90px;
-            font-weight: 700;
         }
-        span{
-            color: white;
+        color: white;
+        margin-bottom: 5vh;
+    }
+
+    .point-2{
+        display: flex;
+        align-items: center;
+        color: white;
+        margin-bottom: 2vh;
+        img{
+            object-fit: contain;
+            height: 5vh;
+            margin-right: 24px;
+        }
+    }
+
+    .point-3{
+        display: flex;
+        align-items: center;
+        color: white;
+
+        img{
+            object-fit: contain;
+            height: 5vh;
+            margin-right: 24px;
         }
     }
 }
 
 
 
-.portfolio-image{
-    img{
-        height: 50vh;
-        width: auto;
+.my-image{
+    display: flex;
+    align-items: center;
+
+    .purple-about-me{
+        position: absolute;
+        right: 23vw;
+    }
+
+    .purple-about-me{
+        position: absolute;
+        right: 30vw;
+    }
+
+    .portfolio-image{
+        position: absolute;
+        right: 23vw;
+        height: 65vh;
+        z-index: 10;
     }
 }

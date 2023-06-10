@@ -12,13 +12,13 @@
 
     h3 {
         color: white;
-        font-size: 90px;
+        font-size: 6em;
     }
 
     img {
         position: absolute;
         right: 0;
-        width: 40vw;
+        width: 20vw;
         height: 5px;
     }
 }
@@ -26,7 +26,7 @@
 .problem-to-solve {
     display: flex;
     align-items: center;
-    margin-left: 25vw;
+    margin-left: 15vw;
 
     h4 {
         font-size: 32px;
@@ -47,7 +47,7 @@
 
 
 .contact-container {
-    margin-left: 25vw;
+    margin-left: 15vw;
     display: flex;
     flex-direction: column;
     color: white;
@@ -64,59 +64,45 @@
     right: 0;
 }
 
-
+.contact-line{
+    z-index: -2;
+}
 
 .contact-right-side {
     margin-top: 13vh;
+    margin-left: 4vw;
+    z-index: 0;
 }
 
 
 .contact-formular {
+    margin-right: 15vw;
 
-    margin-right: 25vw;
-
-    .name-input input {
+    .input{
+        display: flex;
+        justify-content: center;
+    }
+    .input input {
         padding: 15px 25px;
         border: 1px solid #4B47FF;
         border-radius: 10px;
         width: 500px;
         background-color: rgb(20, 29, 47);
         margin-bottom: 35px;
-
+        color: white;
         &::placeholder {
             color: white;
         }
-    }
 
-
-    .email-input input {
-        padding: 15px 25px;
-        border: 1px solid #4B47FF;
-        border-radius: 10px;
-        width: 500px;
-        background-color: rgb(20, 29, 47);
-        margin-bottom: 35px;
-
-        &::placeholder {
-            color: white;
+        &:hover{
+            cursor: pointer;
+            border: 1px solid rgb(24,129,114);
         }
     }
 
-    .message-input input {
-        padding: 15px 25px;
-        border: 1px solid #4B47FF;
-        border-radius: 10px;
-        width: 500px;
-        background-color: rgb(20, 29, 47);
-        margin-bottom: 35px;
+    .input .message {
         height: 10vh;
-
-        &::placeholder {
-            color: white;
-        }
     }
-
-
 }
 
 .send-message-button-container {
@@ -135,7 +121,7 @@
         line-height: 27.6px;
         border: unset;
         transition: transform 0.15s ease;
-        transform-origin: top left;
+        transform-origin: top;
 
 
         &:hover {
@@ -151,4 +137,117 @@
     position: absolute;
     right: 0;
     margin-top: 7vh;
+    z-index: -1
+}
+
+.back-to-top{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15vw;
+
+    .arrow-circle{
+        border: 2px solid white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+
+            &:hover{
+                opacity: 0.3;
+                cursor: pointer;
+            }
+        
+    }
+}
+
+
+/*/ --------------------- MEDIA QUERRY ----------------/*/
+
+@media screen and (max-width: 1450px) {
+    .contact{
+     flex-direction: column;
+    }
+
+    .problem-to-solve{
+        margin-left: unset !important;
+    }
+
+    .contact-container{
+        margin-left: unset !important;
+    }
+
+    .contact-formular{
+        margin-right: unset !important;
+    }
+
+    .contact-right-side {
+        margin-left: unset !important;
+    }
+
+  
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+.input{
+    width: 400px !important;
+}
+
+.contact-container{
+    margin-left: 5vw !important;
+    margin-right: 5vw !important;
+}
+
+.problem-to-solve{
+    justify-content: center;
+}
+
+}
+
+
+/*/ FONT SIZE /*/
+
+@media screen and (max-width: 700px) {
+    .contact-header{
+        h3{
+            font-size: 4.7em !important;
+        }   
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .contact-header{
+        h3{
+            font-size: 3.7em !important;
+        }   
+    }
+
+    .input{
+        width: 350px !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contact-header {
+        h3{
+            font-size: 3em !important;
+        }  
+    }
+
+    .input{
+        width: 300px !important;
+    }
+}
+
+
+@media screen and (max-width: 420px){
+    .input{
+        width: 250px !important;
+    }
 }

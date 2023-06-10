@@ -12,3 +12,17 @@ html, body{
     font-family: 'Poppins';
     src: url('assets/fonts/Poppins/Poppins-Regular.ttf') format("opentype");
   }
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(75,71,255);
+    border-radius: 10px;
+  }

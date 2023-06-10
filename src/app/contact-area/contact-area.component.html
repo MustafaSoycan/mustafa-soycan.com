@@ -1,11 +1,10 @@
-
 <div class="contact-header">
     <div>
         <h3>Contact</h3>
     </div>
 
     <div>
-        <img src="assets/img/line-contacts.png" alt="line">
+        <img class="contact-line" src="assets/img/line-contacts.png" alt="line">
     </div>
 </div>
 
@@ -13,7 +12,7 @@
     <div class="contact-left-side">
         <div class="problem-to-solve">
             <div class="line-image">
-                <img src="assets/img/contact-second-line.png" alt="line">
+                <img class="contact-line" src="assets/img/contact-second-line.png" alt="line">
             </div>
             <div class="problem-text">
                 <h4>Got a problem to solve?</h4>
@@ -40,20 +39,20 @@
         <div class="contact-formular">
             <form (submit)="sendMail()" ngNativeValidate #myForm>
 
-                <div class="name-input">
-                <input required type="text" placeholder="your name" name="name" #nameField>
+                <div class="input">
+                    <input required type="text" placeholder="your name" name="name" #nameField>
                 </div>
 
-                <div class="email-input">
-                <input required type="text" placeholder="your email">
+                <div class="input">
+                    <input required type="text" placeholder="your email">
                 </div>
 
-                <div class="message-input">
-                <input required type="text" placeholder="your message" name="message" #messageField>
+                <div class="input">
+                    <input class="message" required type="text" placeholder="your message" name="message" #messageField>
                 </div>
 
                 <div class="send-message-button-container">
-                <button #sendButton class="send-message-button">Send Message :> </button>
+                    <button #sendButton class="send-message-button">Send Message &#58;&#41; </button>
                 </div>
             </form>
         </div>
@@ -61,3 +60,11 @@
 </div>
 
 
+
+<div class="back-to-top">
+    <a href="#">
+        <div class="arrow-circle">
+            <img src="assets/img/arrow-up.png">
+        </div>
+    </a>
+</div>

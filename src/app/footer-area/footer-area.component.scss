@@ -20,6 +20,15 @@
         flex-direction: column;
     }
 
+    .impressum-link a{
+        color: white;
+        text-decoration: none;
+
+        &:hover{
+            color: lightgrey;
+        }
+    }
+
     .copyright{
         font-size: 23px;
         color: white;
@@ -36,4 +45,35 @@
             }
         }
     }
+}
+
+
+/*/ --------------------- MEDIA QUERRY ----------------/*/
+
+@media screen and (max-width: 1150px) {
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .social-media{
+        display: flex;
+        justify-content: space-around;
+        gap: 24px;
+        img{
+            margin-left: unset !important;
+        }
+    }
+
+    .impressum{
+        margin-top: 32px;
+    }
+
+    .impressum-link{
+        text-align: center;
+    }
+
+    .social-media{
+        margin-bottom: 32px;
+    }
+
 }

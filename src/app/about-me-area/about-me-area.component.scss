@@ -1,47 +1,49 @@
-
-
-.about-me-container{
+.about-me-container {
     display: flex;
     justify-content: space-between;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    flex-direction: row-reverse;
+    margin-left: 15vw;
+    margin-right: 15vw;
     margin-top: 10vh;
-   
+    margin-bottom: 20vh;
+    position: relative;
 
-    .about-me{
+    .about-me {
         display: flex;
         flex-direction: column;
-        max-width: 30vw;
     }
 
-    .point-1{
+    .point-1 {
         display: flex;
         flex-direction: column;
-       .about-me-title{
-            font-size: 90px;
+        z-index: 0;
+        .about-me-title {
+            font-size: 6em;
         }
+
         color: white;
         margin-bottom: 5vh;
     }
 
-    .point-2{
+    .point-2 {
         display: flex;
         align-items: center;
         color: white;
         margin-bottom: 2vh;
-        img{
+        z-index: 0;
+        img {
             object-fit: contain;
             height: 5vh;
             margin-right: 24px;
         }
     }
 
-    .point-3{
+    .point-3 {
         display: flex;
         align-items: center;
         color: white;
-
-        img{
+        z-index: 0;
+        img {
             object-fit: contain;
             height: 5vh;
             margin-right: 24px;
@@ -51,24 +53,87 @@
 
 
 
-.my-image{
+.my-image {
     display: flex;
     align-items: center;
+    margin-left: 4vw;
 
-    .purple-about-me{
-        position: absolute;
-        right: 23vw;
-    }
-
-    .purple-about-me{
+  
+    .purple-about-me {
         position: absolute;
         right: 30vw;
+        z-index: -2;
     }
 
-    .portfolio-image{
+    .green-about-me{
+        z-index: -2;
+    }
+
+    .portfolio-image {
         position: absolute;
-        right: 23vw;
-        height: 65vh;
-        z-index: 10;
+        bottom: 0;
+
+        height: 75vh;
+        z-index: -1;
     }
 }
+
+/*/ --------- BACKGROUND IMAGE ABOUT ME --------- /*/
+
+
+.about-me-background{
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+/*/ --------------------- MEDIA QUERRY ----------------/*/
+
+@media screen and (max-width: 1690px) {
+    .about-me-container {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me{
+        max-width: unset !important;
+        margin-top: 5vh;
+    }
+
+    .my-image{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .portfolio-image{
+        height: 45vh !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .portfolio-image{
+        height: 40vh !important;
+    }
+
+    .about-me-title{
+        font-size: 4.7em !important;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .about-me-title{
+        font-size: 3.7em !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .about-me-title{
+        font-size: 3em !important;
+    }
+}
+

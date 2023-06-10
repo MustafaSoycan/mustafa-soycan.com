@@ -1,72 +1,56 @@
-.background-color-images {
-    display: flex;
-    justify-content: space-between;
-
-    img {
-        object-fit: cover;
-    }
-}
 
 .name-area {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 208px;
-    left: 208px;
+    right: 5vw;
+    left: 5vw;
     top: 321px;
+    z-index: 0;
 
     .iam-area {
-        display: flex;
-        align-items: flex-end;
-        width: 200px;
-        height: 108px;
         transform: rotate(270deg);
     }
 
     .i-am {
-        font-size: 90px;
+        font-size: 5em;
         font-weight: 400;
         color: white;
     }
-
-
-
-
 
     .name {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: auto;
         white-space: nowrap;
+        flex-wrap: nowrap;
     }
 
     .mustafa-soycan {
         font-weight: 700;
-        font-size: 128px;
+        font-size: 6em;
         color: white;
-        line-height: 153.6px;
-
-
     }
 
     .frontend-developer {
         font-weight: 400;
-        font-size: 64px;
+        font-size: 4em;
         color: #4B47FF;
-        line-height: 76.8px;
     }
 }
-
 
 .button {
     display: flex;
     justify-content: center;
 
+    z-index: 0;
+
     position: absolute;
     top: 593px;
-    left: 200px;
-    right: 200px;
+    left: 2vw;
+    right: 2vw;
 
     .lets-talk-button {
         background: #00BEE8;
@@ -80,6 +64,7 @@
         border: unset;
         transition: transform 0.15s ease;
         transform-origin: top left;
+     
 
         &:hover {
             cursor: pointer;
@@ -87,5 +72,126 @@
             transform: scale(1.1);
         }
     }
-
 }
+
+
+
+.name-green{
+    position: absolute;
+    right: 0;
+    z-index: -2;
+}
+
+.name-blue{
+    z-index: -2;
+}
+
+
+
+/*/ NAME TYPEWRITING EFFECT /*/
+
+.typewriter {
+    overflow: hidden; /* Versteckt den überschüssigen Text */
+    white-space: nowrap; /* Verhindert Zeilenumbruch */
+    animation: typing 3s steps(40, end);
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+/*/ --------------------- MEDIA QUERRY ----------------/*/
+
+@media screen and (max-width: 1150px) {
+    .i-am{
+        font-size: 4em !important;
+    }
+
+    .mustafa-soycan{
+       font-size: 5em !important;
+    }
+
+    .frontend-developer {
+        font-size: 3em !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .i-am{
+        font-size: 3.5em !important;
+    }
+
+    .mustafa-soycan{
+       font-size: 4.5em !important;
+    }
+
+    .frontend-developer {
+        font-size: 2.5em !important;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .i-am{
+        font-size: 3em !important;
+    }
+
+    .mustafa-soycan{
+       font-size: 4em !important;
+    }
+
+    .frontend-developer {
+        font-size: 2em !important;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .i-am{
+        font-size: 2.5em !important;
+    }
+
+    .mustafa-soycan{
+       font-size: 3em !important;
+    }
+
+    .frontend-developer {
+        font-size: 1.5em !important;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .i-am{
+        font-size: 2em !important;
+    }
+
+    .mustafa-soycan{
+       font-size: 2.5em !important;
+    }
+
+    .frontend-developer {
+        font-size: 1.5em !important;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .i-am{
+        font-size: 1.3em !important;
+    }
+
+    .mustafa-soycan{
+       font-size: 1.7em !important;
+    }
+
+    .frontend-developer {
+        font-size: 1.2em !important;
+    }
+
+    .name-area{
+        left: 1vw;
+        right: 1vw;
+    }
+}
+

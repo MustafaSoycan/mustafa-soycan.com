@@ -2,11 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 25vw;
-    margin-right: 25vw;
+    flex-direction: row-reverse;
+    margin-left: 15vw;
+    margin-right: 15vw;
+
     .skills-info-container {
 
-     
+
 
         .skills-header {
             display: flex;
@@ -14,7 +16,7 @@
             color: white;
 
             h3 {
-                font-size: 90px;
+                font-size: 6em;
                 margin-right: 2vw;
             }
 
@@ -56,15 +58,19 @@
     }
 }
 
+.skills-line {
+    z-index: -2;
+}
+
 
 .skills-container {
     margin-top: 25vh;
 
-    img{
+    img {
 
-        transition: transform 0.1s ease;
+        transition: transform 0.2s ease;
 
-        &:hover{
+        &:hover {
             transform: translateY(-10px);
         }
     }
@@ -93,5 +99,73 @@
 
     img {
         margin-bottom: 1vh;
+    }
+}
+
+
+/*/------------------ SKILL ICONS MOBILE VERSION-------/*/
+
+.skills-area-mobile {
+    display: none;
+    margin-top: 9vh;
+}
+
+
+/*/ --------------------- MEDIA QUERRY ----------------/*/
+
+@media screen and (max-width: 1300px) {
+    .skills-area {
+        display: block;
+    }
+
+    .skills-container {
+        margin-top: 15vh;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .skills-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // MOBILE SKILLS AREA
+    .skills-area-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // DISPLAY NONE ORIGINAL SKILLS AREA
+    .skills-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .skills-header {
+        h3 {
+            font-size: 4.7em !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .skills-header {
+        h3 {
+            font-size: 3.7em !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .skills-header {
+        h3 {
+            font-size: 3em !important;
+        }
     }
 }

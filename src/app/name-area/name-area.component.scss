@@ -1,3 +1,8 @@
+.name-area-content{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 
 .name-area {
     display: flex;
@@ -7,7 +12,7 @@
     right: 5vw;
     left: 5vw;
     top: 321px;
-    z-index: 0;
+    z-index: 1;
 
     .iam-area {
         transform: rotate(270deg);
@@ -75,16 +80,24 @@
 }
 
 
+.background-colors{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    
+    .name-green{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+    }
 
-.name-green{
-    position: absolute;
-    right: 0;
-    z-index: -2;
+    .name-blue{
+        z-index: -1;
+    }
 }
 
-.name-blue{
-    z-index: -2;
-}
+
+
 
 
 

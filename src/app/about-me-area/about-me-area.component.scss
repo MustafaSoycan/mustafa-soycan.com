@@ -5,7 +5,7 @@
     margin-left: 15vw;
     margin-right: 15vw;
     margin-top: 10vh;
-    margin-bottom: 20vh;
+    margin-bottom: 38vh;
     position: relative;
 
     .about-me {
@@ -17,6 +17,7 @@
         display: flex;
         flex-direction: column;
         z-index: 0;
+
         .about-me-title {
             font-size: 6em;
         }
@@ -31,6 +32,7 @@
         color: white;
         margin-bottom: 2vh;
         z-index: 0;
+
         img {
             object-fit: contain;
             height: 5vh;
@@ -43,6 +45,7 @@
         align-items: center;
         color: white;
         z-index: 0;
+
         img {
             object-fit: contain;
             height: 5vh;
@@ -58,20 +61,20 @@
     align-items: center;
     margin-left: 4vw;
 
-  
+
     .purple-about-me {
         position: absolute;
-        right: 30vw;
-        z-index: -2;
+        right: 0;
+        z-index: -3;
     }
 
-    .green-about-me{
-        z-index: -2;
+    .green-about-me {
+        z-index: -3;
     }
 
     .portfolio-image {
         position: absolute;
-        bottom: 0;
+        bottom: -15vh;
 
         height: 75vh;
         z-index: -1;
@@ -80,13 +83,25 @@
 
 /*/ --------- BACKGROUND IMAGE ABOUT ME --------- /*/
 
-
-.about-me-background{
-    position: absolute;
-    top: 100vh;
-    width: 100%;
-    z-index: -1;
+.about-me-content {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
+
+
+.background-vector {
+
+    .about-me-background {
+        position: absolute;
+        top: 49vh;
+        width: 100%;
+        height: 83vh;
+        z-index: -1;
+    }
+}
+
 
 /*/ --------------------- MEDIA QUERRY ----------------/*/
 
@@ -98,42 +113,79 @@
         align-items: center;
     }
 
-    .about-me{
+    .about-me {
         max-width: unset !important;
-        margin-top: 5vh;
     }
 
-    .my-image{
+    .my-image {
         justify-content: center;
+    }
+
+    .portfolio-image {
+        top: -28vh;
+    }
+
+    .about-me-container {
+        margin-top: 20vh;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .portfolio-image{
-        height: 45vh !important;
+    .portfolio-image {
+        height: 65vh !important;
+        top: -17vh;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .portfolio-image{
-        height: 40vh !important;
+    .portfolio-image {
+        height: 60vh !important;
+        top: -13vh;
     }
 
-    .about-me-title{
+    .about-me-title {
         font-size: 4.7em !important;
     }
+
+    .point-1{
+        margin-left: 5vw !important;
+        margin-right: 5vw !important;
+    }
+
+    
+
 }
 
 
-@media screen and (max-width: 600px){
-    .about-me-title{
+@media screen and (max-width: 600px) {
+    .about-me-title {
         font-size: 3.7em !important;
     }
-}
 
-@media screen and (max-width: 500px){
-    .about-me-title{
-        font-size: 3em !important;
+    .portfolio-image {
+        height: 50vh !important;
+        top: -4vh;
     }
 }
 
+@media screen and (max-width: 500px) {
+    .about-me-title {
+        font-size: 3em !important;
+    }
+
+    .portfolio-image {
+        height: 38vh !important;
+        top: 0vh;
+    }
+
+    .about-me-background {
+        height: 41vh !important;
+    }
+}
+
+
+@media screen and (max-height: 1100px) {
+    .about-me {
+        margin-top: 5vh;
+    }
+}

@@ -12,6 +12,7 @@ import { PortfolioAreaComponent } from './portfolio-area/portfolio-area.componen
 import { ContactAreaComponent } from './contact-area/contact-area.component';
 import { FooterAreaComponent } from './footer-area/footer-area.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ImprintComponent } from './imprint/imprint.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SkillsAreaComponent,
     PortfolioAreaComponent,
     ContactAreaComponent,
-    FooterAreaComponent
+    FooterAreaComponent,
+    ImprintComponent
   ],
   imports: [
     BrowserModule,

@@ -10,7 +10,7 @@ html, body{
 
 @font-face {
     font-family: 'Poppins';
-    src: url('assets/fonts/Poppins/Poppins-Regular.ttf') format("opentype");
+    src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format("opentype");
   }
 
   ::-webkit-scrollbar {
@@ -25,4 +25,8 @@ html, body{
   ::-webkit-scrollbar-thumb {
     background-color: rgb(75,71,255);
     border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(83, 155, 248);
   }

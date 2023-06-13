@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(20, 29, 47);
+}
+
+.legal-notice{
+    color: white;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+
+    a{
+        color: rgb(0,190,232);
+        &:hover{
+            color: aqua;
+        }
+    }
+}

@@ -13,7 +13,7 @@ export class ContactAreaComponent {
   @ViewChild('sendButton') sendButton!: ElementRef;
 
   sendMail(){
-    // action="https://mustafa-soycan.developerakademie.net/test/send_mail/send_mail.php" 
+    // action="https://mustafa-soycan.com//mustafa-soycan.com/send_mail/send_mail.php" 
 
     console.log('sending mail', this.myForm);
     let nameField = this.nameField.nativeElement;
@@ -28,7 +28,7 @@ export class ContactAreaComponent {
     fd.append('name', nameField.value);
     fd.append('message', messageField.value);
     // senden
-    fetch("https://mustafa-soycan.developerakademie.net/test/send_mail/send_mail.php",
+    fetch("https://mustafa-soycan.com//mustafa-soycan.com/send_mail/send_mail.php",
     {
       method: 'POST',
       body: fd

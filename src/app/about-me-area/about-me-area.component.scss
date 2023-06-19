@@ -4,7 +4,6 @@
     flex-direction: row-reverse;
     margin-left: 15vw;
     margin-right: 15vw;
-    margin-top: 10vh;
     margin-bottom: 38vh;
     position: relative;
 
@@ -74,7 +73,7 @@
 
     .portfolio-image {
         position: absolute;
-        bottom: -15vh;
+        bottom: -17vh;
 
         height: 75vh;
         z-index: -1;
@@ -95,7 +94,7 @@
 
     .about-me-background {
         position: absolute;
-        top: 49vh;
+        top: 50vh;
         width: 100%;
         height: 83vh;
         z-index: -1;
@@ -111,6 +110,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom:  unset !important;
     }
 
     .about-me {
@@ -119,28 +119,26 @@
 
     .my-image {
         justify-content: center;
+        margin-bottom: 30vh;
     }
 
     .portfolio-image {
-        top: -28vh;
-    }
-
-    .about-me-container {
-        margin-top: 20vh;
+        top: -8vh;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .portfolio-image {
-        height: 65vh !important;
-        top: -17vh;
+        height: 70vh !important;
+        top: -3vh;
     }
+
 }
 
 @media screen and (max-width: 700px) {
     .portfolio-image {
-        height: 60vh !important;
-        top: -13vh;
+        height: 65vh !important;
+        top: 3vh;
     }
 
     .about-me-title {
@@ -152,10 +150,11 @@
         margin-right: 5vw !important;
     }
 
-    
-
+    .about-me-container{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
 }
-
 
 @media screen and (max-width: 600px) {
     .about-me-title {
@@ -163,8 +162,8 @@
     }
 
     .portfolio-image {
-        height: 50vh !important;
-        top: -4vh;
+        height: 60vh !important;
+        top: 18vh;
     }
 }
 
@@ -174,18 +173,20 @@
     }
 
     .portfolio-image {
-        height: 38vh !important;
-        top: 0vh;
+        height: 50vh !important;
+        top: 30vh;
+    }
+
+    .my-image{
+        margin-bottom: 30vh;
     }
 
     .about-me-background {
-        height: 41vh !important;
+        height: 120vh !important;
     }
 }
 
 
-@media screen and (max-height: 1100px) {
-    .about-me {
-        margin-top: 5vh;
-    }
-}
+
+
+

@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="input">
-                    <input required type="text" placeholder="your email">
+                    <input required type="text" placeholder="your email" name="email" #emailField>
                 </div>
 
                 <div class="input">
@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="send-message-button-container">
-                    <button #sendButton class="send-message-button">Send Message &#58;&#41; </button>
+                    <button #sendButton class="send-message-button">{{ sendButtonText }} </button>
                 </div>
             </form>
 

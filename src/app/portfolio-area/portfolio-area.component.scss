@@ -87,7 +87,7 @@
     .github-button{
         background: transparent;
         box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-        border-color: rgb(0,190,232);
+        border: 2px solid rgb(28,230,181);
         border-radius: 10px;
         padding: 15px 30px;
         color: white;
@@ -154,7 +154,6 @@
     bottom: 0;
 
     max-width: 100%;
-    max-height: 20vh;
     padding: 24px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -249,6 +248,10 @@
             font-size: 4.7em !important;
         }   
     }
+
+    .portfolio-projects div:hover img {
+        transform: scale(1.1) !important;
+    }
 }
 
 
@@ -265,7 +268,7 @@
         width: 400px !important;
 
         img{
-            height: 20vh !important;
+            height: 23vh !important;
         }
     }
 }
@@ -282,7 +285,7 @@
         width: 350px !important;
 
         img{
-            height: 18vh !important;
+            height: 22vh !important;
         }
     }
 
@@ -310,7 +313,7 @@
         width: 320px !important;
 
         img{
-            height: 16vh !important;
+            height: 20vh !important;
         }
     }
 
@@ -326,7 +329,7 @@
         width: 290px !important;
 
         img{
-            height: 16vh !important;
+            height: 20vh !important;
         }
     }
 

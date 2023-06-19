@@ -65,12 +65,12 @@
     right: 0;
 }
 
-.contact-line{
+.contact-line {
     z-index: -2;
 }
 
-.contact-left-side{
-    margin-bottom: 10vh;
+.contact-left-side {
+    margin-bottom: 20vh;
 }
 
 .contact-right-side {
@@ -83,10 +83,13 @@
 .contact-formular {
     margin-right: 15vw;
     margin-bottom: 10vh;
-    .input{
+    padding-bottom: 10vh;
+
+    .input {
         display: flex;
         justify-content: center;
     }
+
     .input input {
         padding: 15px 25px;
         border: 1px solid #4B47FF;
@@ -95,13 +98,14 @@
         background-color: rgb(20, 29, 47);
         margin-bottom: 35px;
         color: white;
+
         &::placeholder {
             color: white;
         }
 
-        &:hover{
+        &:hover {
             cursor: pointer;
-            border: 1px solid rgb(24,129,114);
+            border: 1px solid rgb(24, 129, 114);
         }
     }
 
@@ -145,14 +149,15 @@
     z-index: -1
 }
 
-.back-to-top{
+.back-to-top {
     display: flex;
     justify-content: flex-end;
-    position:absolute;
+    position: absolute;
     right: 15vw;
     bottom: 2vh;
+    
 
-    .arrow-circle{
+    .arrow-circle {
         border: 2px solid white;
         border-radius: 100%;
         display: flex;
@@ -162,31 +167,42 @@
         height: 40px;
         opacity: 1;
 
-            &:hover{
-                opacity: 0.3;
-                cursor: pointer;
-            }
-        
+        &:hover {
+            opacity: 0.3;
+            cursor: pointer;
+        }
+
     }
+}
+
+/*/ CONTACT FORMULAR VALID/INVALID /*/
+
+
+.valid {
+    border: 1px solid green;
+}
+
+.invalid {
+    border: 1px solid red;
 }
 
 
 /*/ --------------------- MEDIA QUERRY ----------------/*/
 
 @media screen and (max-width: 1450px) {
-    .contact{
-     flex-direction: column;
+    .contact {
+        flex-direction: column;
     }
 
-    .problem-to-solve{
+    .problem-to-solve {
         margin-left: unset !important;
     }
 
-    .contact-container{
+    .contact-container {
         margin-left: unset !important;
     }
 
-    .contact-formular{
+    .contact-formular {
         margin-right: unset !important;
     }
 
@@ -194,25 +210,27 @@
         margin-left: unset !important;
     }
 
-  
+    .contact-left-side{
+        margin-bottom: unset !important;
+    }
 
 }
 
 
 @media screen and (max-width: 750px) {
 
-.input{
-    width: 400px !important;
-}
+    .input {
+        width: 400px !important;
+    }
 
-.contact-container{
-    margin-left: 5vw !important;
-    margin-right: 5vw !important;
-}
+    .contact-container {
+        margin-left: 5vw !important;
+        margin-right: 5vw !important;
+    }
 
-.problem-to-solve{
-    justify-content: center;
-}
+    .problem-to-solve {
+        justify-content: center;
+    }
 
 }
 
@@ -220,41 +238,41 @@
 /*/ FONT SIZE /*/
 
 @media screen and (max-width: 700px) {
-    .contact-header{
-        h3{
+    .contact-header {
+        h3 {
             font-size: 4.7em !important;
-        }   
+        }
     }
 }
 
 
-@media screen and (max-width: 600px){
-    .contact-header{
-        h3{
+@media screen and (max-width: 600px) {
+    .contact-header {
+        h3 {
             font-size: 3.7em !important;
-        }   
+        }
     }
 
-    .input{
+    .input {
         width: 350px !important;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
     .contact-header {
-        h3{
+        h3 {
             font-size: 3em !important;
-        }  
+        }
     }
 
-    .input{
+    .input {
         width: 300px !important;
     }
 }
 
 
-@media screen and (max-width: 420px){
-    .input{
-        width: 250px !important;
+@media screen and (max-width: 420px) {
+    .input {
+        width: 300px !important;
     }
 }

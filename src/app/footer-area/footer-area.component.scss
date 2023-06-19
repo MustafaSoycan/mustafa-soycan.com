@@ -48,11 +48,13 @@
 }
 
 
+
 /*/ --------------------- MEDIA QUERRY ----------------/*/
 
 @media screen and (max-width: 1150px) {
     .footer-container{
         flex-direction: column;
+        height: 40vh !important;
     }
 
     .social-media{
